@@ -24,4 +24,3 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog_generator.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
-urlpatterns += static(settings.STATIC_URL, doucument_root = settings.STATIC_ROOT)
